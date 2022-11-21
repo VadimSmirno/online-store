@@ -1,0 +1,15 @@
+{% extends "django-frontend/base.html" %}
+{% block title %} Autentifictions {% endblock title %}
+{% block content %}
+{% load i18n %}
+<div class="registrations">
+    <form  method="post">
+        {% csrf_token %}
+        {{user_form.as_p}}
+    <div class="submit-block">
+        <div><button class="" type="submit">{% trans  "Регистрация" %}</button></div>
+        <div><a class="btn-authorization" href="/app_user/login">{% trans  "Авторизоваться" %}</a></div>
+    </div>
+    </form>
+</div>
+{% endblock content %}

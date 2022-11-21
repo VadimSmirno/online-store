@@ -1,0 +1,745 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-26 12:35+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\app_ordering\forms.py:25
+msgid "Password"
+msgstr ""
+
+#: .\app_ordering\forms.py:35
+msgid "Password confirmation"
+msgstr ""
+
+#: .\app_ordering\forms.py:42
+msgid "Enter the same password as before, for verification."
+msgstr ""
+
+#: .\templates\django-frontend\account.html:9
+#: .\templates\django-frontend\account.html:14
+#: .\templates\django-frontend\account.html:31
+#: .\templates\django-frontend\base.html:92
+#: .\templates\django-frontend\historyorder.html:31
+#: .\templates\django-frontend\profile.html:32
+msgid "Личный кабинет"
+msgstr "Personal area"
+
+#: .\templates\django-frontend\account.html:12
+#: .\templates\django-frontend\cart.html:13
+#: .\templates\django-frontend\catalog.html:12
+#: .\templates\django-frontend\historyorder.html:12
+#: .\templates\django-frontend\oneorder.html:14
+#: .\templates\django-frontend\order.html:12
+#: .\templates\django-frontend\payment.html:12
+#: .\templates\django-frontend\paymentsomeone.html:13
+#: .\templates\django-frontend\product.html:13
+#: .\templates\django-frontend\profile.html:13
+#: .\templates\django-frontend\progressPayment.html:12
+msgid "home"
+msgstr ""
+
+#: .\templates\django-frontend\account.html:25
+#: .\templates\django-frontend\historyorder.html:25
+#: .\templates\django-frontend\profile.html:26
+#, fuzzy
+#| msgid "Показать навигацию"
+msgid "Навигация"
+msgstr "Navigation"
+
+#: .\templates\django-frontend\account.html:33
+#: .\templates\django-frontend\historyorder.html:33
+#: .\templates\django-frontend\profile.html:10
+#: .\templates\django-frontend\profile.html:15
+#: .\templates\django-frontend\profile.html:34
+msgid "Профиль"
+msgstr "Profile"
+
+#: .\templates\django-frontend\account.html:35
+#: .\templates\django-frontend\historyorder.html:9
+#: .\templates\django-frontend\historyorder.html:14
+#: .\templates\django-frontend\historyorder.html:35
+#: .\templates\django-frontend\oneorder.html:16
+#: .\templates\django-frontend\profile.html:36
+msgid "История заказов"
+msgstr "History Order"
+
+#: .\templates\django-frontend\account.html:37
+msgid "История просмотра"
+msgstr "History views"
+
+#: .\templates\django-frontend\account.html:62
+#: .\templates\django-frontend\historyorder.html:50
+msgid "Заказ"
+msgstr "Order"
+
+#: .\templates\django-frontend\account.html:63
+msgid "История заказов:"
+msgstr "History ordering"
+
+#: .\templates\django-frontend\account.html:68
+#: .\templates\django-frontend\historyorder.html:54
+#: .\templates\django-frontend\oneorder.html:63
+#: .\templates\django-frontend\order.html:209
+msgid "Тип доставки:"
+msgstr "Type delivery"
+
+#: .\templates\django-frontend\account.html:74
+#: .\templates\django-frontend\historyorder.html:60
+#: .\templates\django-frontend\oneorder.html:81
+#: .\templates\django-frontend\order.html:227
+msgid "Оплата:"
+msgstr "Payment:"
+
+#: .\templates\django-frontend\account.html:80
+#: .\templates\django-frontend\historyorder.html:66
+msgid "Общая стоимость:"
+msgstr "Total price"
+
+#: .\templates\django-frontend\account.html:86
+#: .\templates\django-frontend\historyorder.html:72
+#: .\templates\django-frontend\oneorder.html:88
+#: .\templates\django-frontend\oneorder.html:101
+msgid "Статус:"
+msgstr "status"
+
+#: .\templates\django-frontend\account.html:89
+#: .\templates\django-frontend\oneorder.html:103
+msgid "Оплачен"
+msgstr "paid"
+
+#: .\templates\django-frontend\account.html:92
+#: .\templates\django-frontend\oneorder.html:90
+msgid "Не оплачен"
+msgstr "not paid"
+
+#: .\templates\django-frontend\base.html:56
+msgid "Free Delivery"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:58
+msgid "Follow US"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:81
+msgid "Language"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:90
+msgid "Login / Register"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:93
+msgid "Выйти"
+msgstr "Exit"
+
+#: .\templates\django-frontend\base.html:118
+msgid "Home"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:121
+msgid "Blog"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:123
+msgid "Hot"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:123
+msgid "Gallery"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:126
+msgid "Purchase"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:140
+msgid "Показать навигацию"
+msgstr "Navigation"
+
+#: .\templates\django-frontend\base.html:151
+#: .\templates\django-frontend\catalog.html:14
+msgid "Catalog"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:158
+msgid "Бытовая техника"
+msgstr "Appliances"
+
+#: .\templates\django-frontend\base.html:162
+msgid "Акустика"
+msgstr "Acoustics"
+
+#: .\templates\django-frontend\base.html:166
+msgid "Ремонт и строительство"
+msgstr "Repair and construction"
+
+#: .\templates\django-frontend\base.html:169
+msgid "Электрика"
+msgstr "Electrician"
+
+#: .\templates\django-frontend\base.html:171
+msgid "Сантехника"
+msgstr "Plumbing"
+
+#: .\templates\django-frontend\base.html:176
+msgid "Отдых и развлечения"
+msgstr "Recreation and entertainment"
+
+#: .\templates\django-frontend\base.html:180
+msgid "Видеокарты"
+msgstr "Video cards"
+
+#: .\templates\django-frontend\base.html:184
+msgid "TV и Мультимедия"
+msgstr "TV and Multimedia"
+
+#: .\templates\django-frontend\base.html:188
+msgid "Смартфоны и Гаджеты"
+msgstr "Gadgets"
+
+#: .\templates\django-frontend\base.html:191
+msgid "Телефоны"
+msgstr "Phones"
+
+#: .\templates\django-frontend\base.html:193
+msgid "Планшеты"
+msgstr "Tablets"
+
+#: .\templates\django-frontend\base.html:198
+msgid "Инструменты"
+msgstr "Tools"
+
+#: .\templates\django-frontend\base.html:202
+msgid "Автотовары"
+msgstr "Auto products"
+
+#: .\templates\django-frontend\base.html:206
+msgid "Для дома и дачи"
+msgstr "For home and garden"
+
+#: .\templates\django-frontend\base.html:210
+msgid "Офис"
+msgstr "Office"
+
+#: .\templates\django-frontend\base.html:213
+msgid "Оргтехника"
+msgstr "Office equipment"
+
+#: .\templates\django-frontend\base.html:215
+msgid "Мебель"
+msgstr "Furniture"
+
+#: .\templates\django-frontend\base.html:220
+msgid "Аксессуары"
+msgstr "Accessories"
+
+#: .\templates\django-frontend\base.html:230
+msgid "What are you looking for ..."
+msgstr ""
+
+#: .\templates\django-frontend\base.html:231
+msgid "Search"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:246
+msgid ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy "
+"nibh euismod tincid  unt ut laoreet dolore magna aliquam erat volutpat. Ut "
+"wisi enim ad"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:261
+msgid "Useful Links"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:264
+msgid "Checkout"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:266
+msgid "My Cart"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:268
+msgid "Delivery"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:270
+msgid "Order Info"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:272
+msgid "Terms"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:274
+msgid "Conditions"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:279
+msgid "My Account"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:282
+msgid "Accessories"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:284
+msgid "Bags"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:286
+msgid "Cameras"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:288
+msgid "Clothings"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:290
+msgid "Electronics"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:292
+msgid "Fashion"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:297
+msgid "Contacts"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:299
+msgid "Phone"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:299
+msgid "Address"
+msgstr ""
+
+#: .\templates\django-frontend\base.html:309
+msgid "Accepted Payments"
+msgstr ""
+
+#: .\templates\django-frontend\cart.html:10
+#: .\templates\django-frontend\cart.html:15
+msgid "Корзина"
+msgstr "cart"
+
+#: .\templates\django-frontend\cart.html:64
+#: .\templates\django-frontend\oneorder.html:134
+msgid "Итого:"
+msgstr "Total:"
+
+#: .\templates\django-frontend\cart.html:67
+msgid "Оформить заказ"
+msgstr "Checkout"
+
+#: .\templates\django-frontend\catalog.html:9
+msgid "Catalog Megano"
+msgstr ""
+
+#: .\templates\django-frontend\catalog.html:25
+msgid "Filter"
+msgstr ""
+
+#: .\templates\django-frontend\catalog.html:34
+msgid "Price"
+msgstr ""
+
+#: .\templates\django-frontend\catalog.html:48
+msgid "Только товары в наличии"
+msgstr "Only items in stock"
+
+#: .\templates\django-frontend\catalog.html:53
+msgid "С бесплатной доставкой"
+msgstr "With free shipping"
+
+#: .\templates\django-frontend\catalog.html:57
+msgid "Кнопка"
+msgstr "button"
+
+#: .\templates\django-frontend\catalog.html:65
+msgid "Popular tags"
+msgstr ""
+
+#: .\templates\django-frontend\catalog.html:69
+msgid "Video"
+msgstr ""
+
+#: .\templates\django-frontend\catalog.html:69
+msgid "Development"
+msgstr ""
+
+#: .\templates\django-frontend\catalog.html:69
+msgid "Gaming"
+msgstr ""
+
+#: .\templates\django-frontend\catalog.html:69
+msgid "Asus"
+msgstr ""
+
+#: .\templates\django-frontend\catalog.html:76
+msgid "Сортировать по:"
+msgstr "Sort by:"
+
+#: .\templates\django-frontend\catalog.html:78
+msgid "Популярности"
+msgstr "popularity"
+
+#: .\templates\django-frontend\catalog.html:78
+msgid "Цене"
+msgstr "price"
+
+#: .\templates\django-frontend\catalog.html:78
+msgid "Отзывам"
+msgstr "reviews"
+
+#: .\templates\django-frontend\catalog.html:78
+msgid "Новизне"
+msgstr "novelty"
+
+#: .\templates\django-frontend\historyorder.html:50
+#: .\templates\django-frontend\index.html:14
+msgid "от"
+msgstr "from"
+
+#: .\templates\django-frontend\historyorder.html:75
+msgid "Оплачено"
+msgstr "Paid"
+
+#: .\templates\django-frontend\historyorder.html:78
+msgid "Не оплачено"
+msgstr "not Paid"
+
+#: .\templates\django-frontend\historyorder.html:84
+#: .\templates\django-frontend\oneorder.html:94
+msgid "Оплата не прошла:"
+msgstr "Payment failed:"
+
+#: .\templates\django-frontend\index.html:30
+msgid "Popular Products"
+msgstr ""
+
+#: .\templates\django-frontend\index.html:62
+msgid "Shipping & Returns"
+msgstr ""
+
+#: .\templates\django-frontend\index.html:64
+msgid "World wide shipping"
+msgstr ""
+
+#: .\templates\django-frontend\index.html:74
+msgid "Money Back"
+msgstr ""
+
+#: .\templates\django-frontend\index.html:76
+msgid "Guaranted payments"
+msgstr ""
+
+#: .\templates\django-frontend\index.html:86
+msgid "Support Policy"
+msgstr ""
+
+#: .\templates\django-frontend\index.html:88
+msgid "Fast support team"
+msgstr ""
+
+#: .\templates\django-frontend\index.html:98
+msgid "Quality Guarantee"
+msgstr ""
+
+#: .\templates\django-frontend\index.html:100
+msgid "Best guaranted items"
+msgstr ""
+
+#: .\templates\django-frontend\index.html:109
+msgid "Limited edition"
+msgstr ""
+
+#: .\templates\django-frontend\login.html:9
+msgid "Войти"
+msgstr "input"
+
+#: .\templates\django-frontend\oneorder.html:11
+#: .\templates\django-frontend\oneorder.html:18
+msgid "Заказ №"
+msgstr "order №"
+
+#: .\templates\django-frontend\oneorder.html:37
+msgid "Дата заказа:"
+msgstr "Order date:"
+
+#: .\templates\django-frontend\oneorder.html:43
+#: .\templates\django-frontend\order.html:189
+msgid "ФИО:"
+msgstr "Full Name"
+
+#: .\templates\django-frontend\oneorder.html:49
+#: .\templates\django-frontend\order.html:195
+#, fuzzy
+#| msgid "Телефоны"
+msgid "Телефон:"
+msgstr "Phones"
+
+#: .\templates\django-frontend\oneorder.html:69
+#: .\templates\django-frontend\order.html:215
+msgid "Город:"
+msgstr "city"
+
+#: .\templates\django-frontend\oneorder.html:75
+#: .\templates\django-frontend\order.html:221
+msgid "Адрес:"
+msgstr "address"
+
+#: .\templates\django-frontend\oneorder.html:127
+msgid "шт."
+msgstr "amount"
+
+#: .\templates\django-frontend\order.html:9
+#: .\templates\django-frontend\order.html:14
+msgid "Оформление заказа"
+msgstr "Checkout"
+
+#: .\templates\django-frontend\order.html:25
+#, fuzzy
+#| msgid "Отдых и развлечения"
+msgid "Прогресс заполнения"
+msgstr "Recreation and entertainment"
+
+#: .\templates\django-frontend\order.html:30
+#: .\templates\django-frontend\order.html:47
+msgid "Шаг 1. Параметры пользователя"
+msgstr "Step 1: User Options"
+
+#: .\templates\django-frontend\order.html:32
+#: .\templates\django-frontend\order.html:128
+msgid "Шаг 2. Способ доставки"
+msgstr "step 2 delivery method"
+
+#: .\templates\django-frontend\order.html:34
+#: .\templates\django-frontend\order.html:158
+msgid "Шаг 3. Способ оплаты"
+msgstr "Step 3. Payment Method"
+
+#: .\templates\django-frontend\order.html:36
+#: .\templates\django-frontend\order.html:180
+msgid "Шаг 4. Подтверждение заказа"
+msgstr "Step 4. Order confirmation"
+
+#: .\templates\django-frontend\order.html:54
+#: .\templates\django-frontend\order.html:79
+#: .\templates\django-frontend\profile.html:61
+msgid "ФИО"
+msgstr "full name"
+
+#: .\templates\django-frontend\order.html:60
+#: .\templates\django-frontend\order.html:84
+#: .\templates\django-frontend\profile.html:69
+#, fuzzy
+#| msgid "Телефоны"
+msgid "Телефон"
+msgstr "Phones"
+
+#: .\templates\django-frontend\order.html:75
+msgid "login"
+msgstr ""
+
+#: .\templates\django-frontend\order.html:101
+#: .\templates\django-frontend\profile.html:80
+msgid "Пароль"
+msgstr "password"
+
+#: .\templates\django-frontend\order.html:106
+#: .\templates\django-frontend\profile.html:86
+msgid "Подтверждение пароля"
+msgstr "Password confirmation"
+
+#: .\templates\django-frontend\order.html:110
+msgid "Я уже зарегистрирован"
+msgstr "I'm already registered"
+
+#: .\templates\django-frontend\order.html:118
+#: .\templates\django-frontend\order.html:153
+#: .\templates\django-frontend\order.html:173
+msgid "Дальше"
+msgstr "Farther"
+
+#: .\templates\django-frontend\order.html:121
+msgid "Зарегистрироваться"
+msgstr "Register"
+
+#: .\templates\django-frontend\order.html:134
+msgid "Обычная доставка"
+msgstr "regular delivery"
+
+#: .\templates\django-frontend\order.html:139
+msgid "Экспресс доставка"
+msgstr "Express delivery"
+
+#: .\templates\django-frontend\order.html:144
+msgid "Город"
+msgstr "city"
+
+#: .\templates\django-frontend\order.html:149
+msgid "Адрес"
+msgstr "address"
+
+#: .\templates\django-frontend\order.html:164
+msgid "Онлайн картой"
+msgstr "Online card"
+
+#: .\templates\django-frontend\order.html:169
+msgid "Онлайн со случайного чужого счета"
+msgstr "Online from a random someone else's account"
+
+#: .\templates\django-frontend\order.html:265
+#: .\templates\django-frontend\order.html:270
+#: .\templates\django-frontend\payment.html:30
+#: .\templates\django-frontend\paymentsomeone.html:33
+msgid "Оплатить"
+msgstr "Pay"
+
+#: .\templates\django-frontend\payment.html:9
+#: .\templates\django-frontend\payment.html:14
+#: .\templates\django-frontend\paymentsomeone.html:10
+#: .\templates\django-frontend\paymentsomeone.html:15
+msgid "Оплата"
+msgstr "Pay"
+
+#: .\templates\django-frontend\payment.html:25
+#, fuzzy
+#| msgid "Видеокарты"
+msgid "Номер карты"
+msgstr "Video cards"
+
+#: .\templates\django-frontend\paymentsomeone.html:26
+msgid "Номер счета"
+msgstr "Account number"
+
+#: .\templates\django-frontend\paymentsomeone.html:30
+msgid "Сгенирировать случайный счет"
+msgstr "Generate random score"
+
+#: .\templates\django-frontend\product.html:10
+msgid "Megano Product"
+msgstr ""
+
+#: .\templates\django-frontend\product.html:15
+msgid "Product"
+msgstr ""
+
+#: .\templates\django-frontend\product.html:46
+msgid ""
+"Наши клиенты – в центре всего, что мы делаем, доверие - главное. Мы строим "
+"долгосрочные отношения, во всём, чем занимаемся, стремимся быть экспертами, "
+"Открыты для предложений и улучшений. "
+msgstr "Our clients are at the center of everything we do, trust is key. We're building"
+"long-term relationships, in everything we do, we strive to be experts,"
+"Open to suggestions and improvements"
+
+#: .\templates\django-frontend\product.html:49
+msgid ""
+"Прозрачность - основа совместного бизнеса, Работаем, соблюдая этику бизнеса, "
+"Уважаем другие мнения и интересы, Выполняем обязательства и берем "
+"ответственность за свои решения, Нетерпимы к коррупции."
+msgstr "Transparency is the basis of joint business, We work in accordance with business ethics, "
+"We respect other opinions and interests, We fulfill obligations and take "
+"responsibility for their decisions, intolerant of corruption."
+
+#: .\templates\django-frontend\product.html:52
+msgid ""
+"Megano- территория личной и коллективной самореализации, Мы - одна команда, "
+"Уважаем мнение и интересы людей, Ценим свободу, смелость и ответственность."
+msgstr "Megano is a territory of personal and collective self-realization, We are one team, "
+"We respect the opinions and interests of people, We value freedom, courage and responsibility"
+
+#: .\templates\django-frontend\product.html:67
+msgid "Add To Cart"
+msgstr ""
+
+#: .\templates\django-frontend\product.html:74
+msgid "Категория:"
+msgstr "Category:"
+
+#: .\templates\django-frontend\product.html:81
+#: .\templates\django-frontend\product.html:85
+msgid "Описание"
+msgstr "Description"
+
+#: .\templates\django-frontend\product.html:81
+msgid "AdditionaL Info"
+msgstr ""
+
+#: .\templates\django-frontend\product.html:81
+msgid "Reviews"
+msgstr ""
+
+#: .\templates\django-frontend\product.html:87
+msgid "Lorem ipsum dolor sit amet, consectetuer"
+msgstr ""
+
+#: .\templates\django-frontend\product.html:122
+msgid "Reviews:"
+msgstr ""
+
+#: .\templates\django-frontend\product.html:147
+msgid "Добавить отзыв"
+msgstr "Add a review"
+
+#: .\templates\django-frontend\product.html:156
+msgid "Отправить"
+msgstr "Send"
+
+#: .\templates\django-frontend\profile.html:55
+msgid "Выберите аватар"
+msgstr "Choose an avatar"
+
+#: .\templates\django-frontend\profile.html:93
+msgid "Сохранить"
+msgstr "save"
+
+#: .\templates\django-frontend\progressPayment.html:9
+#: .\templates\django-frontend\progressPayment.html:14
+msgid "Ожидание оплаты"
+msgstr "Waiting for payment"
+
+#: .\templates\django-frontend\progressPayment.html:23
+msgid "Ждем подтверждения оплаты платежной системой"
+msgstr "We are waiting for confirmation of payment by the payment system"
+
+#: .\templates\django-frontend\progressPayment.html:26
+#, fuzzy
+#| msgid "Оплата не прошла:"
+msgid "Оплата прошла успешно!"
+msgstr "Payment failed:"
+
+#: .\templates\django-frontend\progressPayment.html:29
+#, fuzzy
+#| msgid "Оплата не прошла:"
+msgid "Оплата не прошла!"
+msgstr "Payment failed:"
+
+#: .\templates\django-frontend\registrations.html:10
+msgid "Регистрация"
+msgstr "Registration"
+
+#: .\templates\django-frontend\registrations.html:11
+#, fuzzy
+#| msgid "Автотовары"
+msgid "Авторизоваться"
+msgstr "Auto products"

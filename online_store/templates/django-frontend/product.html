@@ -1,0 +1,170 @@
+{% extends "django-frontend/base.html" %}
+{% block title %} Megano Product {% endblock title %}
+{% block content %}
+{% load static %}
+{% load i18n %}
+<div class="Middle Middle_top">
+    <div class="Middle-top">
+      <div class="wrap">
+        <div class="Middle-header">
+          <h1 class="Middle-title">{% trans "Megano Product" %}
+          </h1>
+          <ul class="breadcrumbs Middle-breadcrumbs">
+            <li class="breadcrumbs-item"><a href="/app_product/home">{% trans "home" %}</a>
+            </li>
+            <li class="breadcrumbs-item breadcrumbs-item_current"><span>{% trans "Product" %}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="Section">
+      <div class="wrap">
+        <div class="Product">
+          <div class="ProductCard">
+            <div class="ProductCard-look">
+              <div class="ProductCard-photo">
+                <img src="/media/{{product_detail.img}}" alt="bigGoods.png"/>
+              </div>
+              <div class="ProductCard-picts"><a class="ProductCard-pict ProductCard-pict_ACTIVE" href="/media/{{product_detail.img}}"><img src="/media/{{product_detail.img}}" alt="bigGoods.png"/></a><a class="ProductCard-pict" href="/media/{{product_detail.img}}"><img src="/media/{{product_detail.img}}" alt="slider.png"/></a><a class="ProductCard-pict" href="/media/{{product_detail.img}}"><img src="/media/{{product_detail.img}}" alt="videoca.png"/></a>
+              </div>
+            </div>
+            <div class="ProductCard-desc">
+              <div class="ProductCard-header">
+                <h2 class="ProductCard-title">{{product_detail.name}}
+                </h2>
+                <div class="ProductCard-info">
+                  <div class="ProductCard-cost">
+                    <div class="ProductCard-price">${{product_detail.price}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ProductCard-text">
+                <ul>
+                  <li>
+                      {% trans "Наши клиенты – в центре всего, что мы делаем, доверие - главное. Мы строим долгосрочные отношения, во всём, чем занимаемся, стремимся быть экспертами, Открыты для предложений и улучшений. " %}
+                  </li>
+                  <li>
+                      {% trans "Прозрачность - основа совместного бизнеса, Работаем, соблюдая этику бизнеса, Уважаем другие мнения и интересы, Выполняем обязательства и берем ответственность за свои решения, Нетерпимы к коррупции." %}
+                  </li>
+                  <li>
+                      {% trans "Megano- территория личной и коллективной самореализации, Мы - одна команда, Уважаем мнение и интересы людей, Ценим свободу, смелость и ответственность." %}
+                  </li>
+                </ul>
+              </div>
+               <form action="/app_cart/add/{{product_detail.id}}/" method="post">
+                <div class="ProductCard-cart">
+                  <div class="ProductCard-cartElement ProductCard-cartElement_amount">
+                    <div class="Amount Amount_product">
+                        <button class="Amount-remove" type="button">
+                        </button>
+                        {{form_add_cart}}
+                      <button class="Amount-add" type="button">
+                      </button>
+                    </div>
+                  </div>
+                    <div class="ProductCard-cartElement"><button class="btn btn_primary" type="submit"><img class="btn-icon" src="{% static 'assets/img/icons/card/cart_white.svg' %}" alt="cart_white.svg"/><span class="btn-content">{% trans "Add To Cart" %}</span></button>
+                    </div>
+                </div>
+                 {% csrf_token %}
+               </form>
+              <div class="ProductCard-footer">
+                <div class="ProductCard-tags">
+                  <strong class="ProductCard-tagsTitle">{% trans "Категория:" %}
+                  </strong><a href="/app_product/catalog/{{product_detail.product_category_id}}">{{product_detail.product_category.name}}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Tabs Tabs_default">
+            <div class="Tabs-links"><a class="Tabs-link_ACTIVE Tabs-link" href="#description"><span>{% trans "Описание" %}</span></a><a class="Tabs-link" href="#addit"><span>{% trans "AdditionaL Info" %}</span></a><a class="Tabs-link" href="#reviews"><span>{% trans "Reviews" %} {{count_review}}</span></a>
+            </div>
+            <div class="Tabs-wrap">
+              <div class="Tabs-block" id="description">
+                <h2>{% trans "Описание" %}
+                </h2>
+                <p>{% trans "Lorem ipsum dolor sit amet, consectetuer" %}&#32;
+                  <strong>
+                  </strong>{{product_detail.description}}
+                </p><img class="pict pict_right" src="/media/{{product_detail.img}}" alt="bigGoods.png"/>
+                <div class="clearfix">
+                </div>
+                <div class="table">
+                </div>
+              </div>
+              <div class="Tabs-block" id="sellers">
+                <div class="Categories Categories_product">
+                </div>
+              </div>
+              <div class="Tabs-block" id="addit">
+                <div class="Product-props">
+                 <div class="Product-prop">
+                    <strong>Lorem
+                    </strong><span> Pfizer</span>
+                  </div>
+                  <div class="Product-prop">
+                    <strong>ipsum
+                    </strong><span> Lorem ipsum dolor sit</span>
+                  </div>
+                  <div class="Product-prop">
+                    <strong>dolor sit
+                    </strong><span> 5 ans</span>
+                  </div>
+                  <div class="Product-prop">
+                    <strong>psum dolo
+                    </strong><span> 2–3 jours</span>
+                  </div>
+                </div>
+              </div>
+              <div class="Tabs-block" id="reviews">
+                <header class="Section-header">
+                  <h3 class="Section-title"> {% trans "Reviews:" %} {{count_review}}
+                  </h3>
+                </header>
+                <div class="Comments">
+                  {% for i in result %}
+                  <div class="Comment">
+                    <div class="Comment-column Comment-column_pict">
+                      <div class="Comment-avatar">
+                      </div>
+                    </div>
+                    <div class="Comment-column">
+                      <header class="Comment-header">
+                        <div>
+                          <strong class="Comment-title">{{i.author.first_name}}
+                          </strong><span class="Comment-date"> {{i.created}}</span>
+                        </div>
+                      </header>
+                      <div class="Comment-content">{{i.descriptions}}
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+                {% if request.user.is_authenticated %}
+                <header class="Section-header Section-header_product">
+                  <h3 class="Section-title">{% trans "Добавить отзыв" %}
+                  </h3>
+                </header>
+                <div class="Tabs-addComment">
+                  <form class="form" action="#" method="post"> {% csrf_token %}
+                    <div class="form-group">
+                      {{form.body}}
+                    </div>
+                    <div class="form-group">
+                      <button class="btn btn_muted" type="submit">{% trans "Отправить" %}
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+

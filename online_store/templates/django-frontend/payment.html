@@ -1,0 +1,37 @@
+{% extends "django-frontend/base.html" %}
+{% block title %} pyment {% endblock title %}
+{% block content %}
+{% load i18n %}
+  <div class="Middle Middle_top">
+    <div class="Middle-top">
+      <div class="wrap">
+        <div class="Middle-header">
+          <h1 class="Middle-title">{% trans "Оплата" %}
+          </h1>
+          <ul class="breadcrumbs Middle-breadcrumbs">
+            <li class="breadcrumbs-item"><a href="{% url 'home' %}">{% trans "home" %}</a>
+            </li>
+            <li class="breadcrumbs-item breadcrumbs-item_current"><span>{% trans "Оплата" %}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="Section">
+      <div class="wrap">
+        <form class="form Payment" action="#" method="post">
+          <div class="Payment-card">
+            <div class="form-group">
+              <label class="form-label">{% trans "Номер карты" %}
+              </label>
+              <input class="form-input Payment-bill" id="numero1" name="numero1" type="text" placeholder="9999 9999" data-mask="9999 9999" data-validate=""/>
+            </div>
+          </div>
+          <div class="Payment-pay"><button class="btn btn_primary" type="submit">{% trans "Оплатить" %}</button>
+          </div>
+          {% csrf_token %}
+        </form>
+      </div>
+    </div>
+  </div>
+ {% endblock content %}

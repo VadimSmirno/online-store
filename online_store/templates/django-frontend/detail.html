@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for item in cart %}
+{% with product=item.product %}
+{{ product.name }}
+<form action="/app_cart/add/{{product.id}}/" method="post">
+    {{ item.update_quantity_form.quantity }}
+                {{ item.update_quantity_form.update }}
+    {%csrf_token%}
+    <input type="submit" value="Обновить">
+</form>
+{{ item.quantity }}
+{{ item.price }}
+{{ item.total_price }}
+  {% endwith %}
+      {% endfor %}
+</body>
+</html>

@@ -1,0 +1,101 @@
+{% extends "django-frontend/base.html" %}
+{% block title %} History Order {% endblock title %}
+{% block content %}
+{% load i18n %}
+<div class="Middle Middle_top">
+  <div class="Middle-top">
+    <div class="wrap">
+      <div class="Middle-header">
+        <h1 class="Middle-title">{% trans "История заказов" %}
+        </h1>
+        <ul class="breadcrumbs Middle-breadcrumbs">
+          <li class="breadcrumbs-item"><a href="index.html">{% trans "home" %}</a>
+          </li>
+          <li class="breadcrumbs-item breadcrumbs-item_current"><span>{% trans "История заказов" %}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="Section Section_column Section_columnLeft">
+    <div class="wrap">
+      <div class="Section-column">
+        <div class="Section-columnSection">
+          <header class="Section-header">
+            <strong class="Section-title">{% trans "Навигация" %}
+            </strong>
+          </header>
+          <div class="Section-columnContent">
+            <div class="NavigateProfile">
+              <ul class="menu menu_vt">
+                <li class="menu-item"><a class="menu-link" href="/app_user/personal_area/{{request.user.id}}">{% trans "Личный кабинет" %}</a>
+                </li>
+                <li class="menu-item"><a class="menu-link" href="/app_user/redact_profile/">{% trans "Профиль" %}</a>
+                </li>
+                <li class="menu-item_ACTIVE menu-item"><a class="menu-link" href="">{% trans "История заказов" %}</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Section-content">
+        <div class="Orders">
+          {% for i in history %}
+
+          <div class="Order Order_anons">
+            <div class="Order-personal">
+              <div class="row">
+                <div class="row-block"><a class="Order-title" href="/app_history_order/order_info/{{i.number_order}}">{% trans "Заказ" %}&#32;<span class="Order-numberOrder">№{{i.number_order}}</span>&#32;{% trans "от" %}&#32;<span class="Order-dateOrder">{{i.created}}</span></a>
+                </div>
+                <div class="row-block">
+                  <div class="Order-info Order-info_delivery">
+                    <div class="Order-infoType">{% trans "Тип доставки:" %}
+                    </div>
+                    <div class="Order-infoContent">{{i.delivery_method}}
+                    </div>
+                  </div>
+                  <div class="Order-info Order-info_pay">
+                    <div class="Order-infoType">{% trans "Оплата:" %}
+                    </div>
+                    <div class="Order-infoContent">{{i.payment_method}}
+                    </div>
+                  </div>
+                  <div class="Order-info">
+                    <div class="Order-infoType">{% trans "Общая стоимость:" %}
+                    </div>
+                    <div class="Order-infoContent"><span class="Order-price">{{i.total_price}}$</span>
+                    </div>
+                  </div>
+                  <div class="Order-info Order-info_status">
+                    <div class="Order-infoType">{% trans "Статус:" %}
+                    </div>
+                    {% if i.status %}
+                    <div class="Order-infoContent"> {% trans "Оплачено" %}
+                    </div>
+                    {% else %}
+                    <div class="Order-infoContent"> {% trans "Не оплачено" %}
+                    </div>
+                    {% endif %}
+                  </div>
+                  {% if not i.status %}
+                  <div class="Order-info Order-info_error">
+                      <div class="Order-infoType">{% trans "Оплата не прошла:" %}
+                      </div>
+                      <div class="Order-infoContent">{{i.text_error}}
+                      </div>
+                  </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ {% endblock content %}

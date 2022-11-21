@@ -1,0 +1,75 @@
+{% extends "django-frontend/base.html" %}
+{% block title %} Cart {% endblock title %}
+{% block content %}
+ {% load static %}
+{% load i18n %}
+  <div class="Middle Middle_top">
+    <div class="Middle-top">
+      <div class="wrap">
+        <div class="Middle-header">
+          <h1 class="Middle-title">{% trans "Корзина" %}
+          </h1>
+          <ul class="breadcrumbs Middle-breadcrumbs">
+            <li class="breadcrumbs-item"><a href="index.html">{% trans "home" %}</a>
+            </li>
+            <li class="breadcrumbs-item breadcrumbs-item_current"><span>{% trans "Корзина" %}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="Section">
+      <div class="wrap">
+        <form class="form Cart" action="/app_ordering/ordering" method="post">
+          {% for item in cart %}
+          {% with product=item.product %}
+          <div class="Cart-product">
+            <div class="Cart-block Cart-block_row">
+              <div class="Cart-block Cart-block_pict"><a class="Cart-pict" href="/app_product/product_detail/{{product.id}}"><img class="Cart-img" src="/media/{{product.img}}" alt="card.jpg"/></a>
+              </div>
+              <div class="Cart-block Cart-block_info"><a class="Cart-title" href="/app_product/product_detail/{{product.id}}">{{product.name}}</a>
+                <div class="Cart-desc">{{product.description | truncatewords:5}}
+                </div>
+              </div>
+              <div class="Cart-block Cart-block_price">
+                <div class="Cart-price">{{product.price}}$
+                </div>
+              </div>
+            </div>
+            <div class="Cart-block Cart-block_row">
+              <div class="Cart-block Cart-block_seller">
+                <!-- - var options = setOptions(items, ['value', 'selected', 'disabled']);-->
+
+              </div>
+              <div class="Cart-block Cart-block_amount">
+                <div class="Cart-amount">
+                  <div class="Amount">
+                    <button onclick="document.location.href = 'http://127.0.0.1:8000/app_cart/delet/{{product.id}}';" class="Amount-remove" type="button">
+                    </button>
+                    {{ item.update_quantity_form.quantity }}
+                    {{ item.update_quantity_form.update }}
+                    <button onclick="document.location.href = 'http://127.0.0.1:8000/app_cart/update/{{product.id}}';" class="Amount-add" type="submit">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="Cart-block Cart-block_delete"><a class="Cart-delete" href="/app_cart/remove/{{product.id}}/"><img src="{% static 'assets/img/icons/card/delete.svg' %}" alt="delete.svg"/></a>
+              </div>
+            </div>
+          </div>
+          {% endwith %}
+          {% endfor %}
+          <div class="Cart-total">
+            <div class="Cart-block Cart-block_total">
+              <strong class="Cart-title">{% trans "Итого:" %}
+              </strong><span class="Cart-price">{{cart.get_total_price}}$</span>
+            </div>
+            <div class="Cart-block"><a class="btn btn_success btn_lg" href="/app_ordering/ordering">{% trans "Оформить заказ" %}</a>
+            </div>
+          </div>
+          {% csrf_token %}
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

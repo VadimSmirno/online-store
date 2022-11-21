@@ -1,0 +1,44 @@
+{% extends "django-frontend/base.html" %}
+{% block title %} ProgressPayment {% endblock title %}
+{% block content %}
+{% load i18n %}
+<div class="Middle Middle_top">
+  <div class="Middle-top">
+    <div class="wrap">
+      <div class="Middle-header">
+        <h1 class="Middle-title">{% trans "Ожидание оплаты" %}
+        </h1>
+        <ul class="breadcrumbs Middle-breadcrumbs">
+          <li class="breadcrumbs-item"><a href="{% url 'home' %}">{% trans "home" %}</a>
+          </li>
+          <li class="breadcrumbs-item breadcrumbs-item_current"><span>{% trans "Ожидание оплаты" %}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="Section">
+    <div class="wrap">
+      <div class="ProgressPayment">
+        <div class="ProgressPayment-title">{% trans "Ждем подтверждения оплаты платежной системой" %}
+        </div>
+        {% if result.success %}
+        <div class="ProgressPayment-green ProgressPayment-none">{% trans "Оплата прошла успешно!" %}
+        </div>
+        {% else %}
+        <div class="ProgressPayment-red ProgressPayment-none">{% trans "Оплата не прошла!" %} {{result.error.message}}!
+        </div>
+        {% endif %}
+        <div class="ProgressPayment-icon">
+          <div class="cssload-thecube">
+            <div class="cssload-cube cssload-c1"></div>
+            <div class="cssload-cube cssload-c2"></div>
+            <div class="cssload-cube cssload-c4"></div>
+            <div class="cssload-cube cssload-c3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
